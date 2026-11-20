@@ -1,0 +1,82 @@
+                                                                                                                                                                                                                                                                          <!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4ede2" />
+    <title>A Christmas Gift of Colors | Imagine City</title>
+    <meta
+      name="description"
+      content="ออกเดินทางเพื่อคืนสีสันให้ Imagine City ในคืนเทศกาล"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mali:wght@500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="winter-pattern" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Imagine City หน้าเริ่มเกม">
+        <span class="wordmark-star" aria-hidden="true">✳</span>
+        <span>IMAGINE CITY</span>
+      </a>
+      <span class="edition-label">A CHRISTMAS STORY</span>
+    </header>
+
+    <main id="home">
+      <section class="welcome-screen" id="welcomeScreen" aria-labelledby="welcomeTitle">
+        <div class="welcome-copy">
+          <p class="eyebrow">VIBE CODE #1 <span>·</span> A CHRISTMAS GIFT OF COLORS</p>
+          <h1 id="welcomeTitle">Imagine City<span class="title-line">คืนสุดท้ายก่อนสีจะหายไป</span></h1>
+          <p class="welcome-story">
+            คืนนี้สีสันของ Imagine City กำลังจะหายไปทั้งเมือง และมีเธอเป็นคนเดียวที่ช่วยได้
+            ถ้ามีใครขึ้นเวทีในเทศกาล Imagine Design Event แล้วทำให้คนทั้งเมืองกลับมายิ้มได้ สีทั้งหมดก็จะกลับมา
+          </p>
+          <button class="button button-primary" id="startGame" type="button">
+            <span>เริ่มออกเดินทาง</span><span class="button-arrow" aria-hidden="true">→</span>
+          </button>
+          <div class="how-to-play">
+            <p class="small-heading">ก่อนออกเดินทาง</p>
+            <ul>
+              <li>ไม่มีคำตอบถูกหรือผิด เลือกข้อที่ใกล้ใจเธอที่สุดในตอนนี้</li>
+              <li>อย่าคิดนาน ข้อที่นึกถึงก่อนมักเป็นข้อที่ใช่</li>
+              <li>เดินทางไปจนถึงคืนเทศกาล แล้วดูว่าเธอเป็นนักเดินทางแบบไหน</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="welcome-art" aria-label="เกล็ดหิมะและกล่องของขวัญ">
+          <div class="art-snowflake snowflake-one" aria-hidden="true">✳</div>
+          <div class="art-snowflake snowflake-two" aria-hidden="true">✳</div>
+          <div class="gift-box gift-box-back" aria-hidden="true"><span></span></div>
+          <div class="gift-box gift-box-front" aria-hidden="true"><span></span></div>
+          <p class="art-caption">A LITTLE MAGIC FOR YOUR CITY</p>
+        </div>
+      </section>
+
+      <section class="game-screen hidden" id="gameScreen" aria-label="การเดินทางใน Imagine City">
+        <div class="journey-topline">
+          <div class="journey-label"><span class="journey-dot"></span><span id="progressLabel">เตรียมออกเดินทาง</span></div>
+          <span class="journey-count" id="progressCount">0 / 11</span>
+        </div>
+        <div class="progress-track" role="progressbar" aria-label="ความคืบหน้าของการเดินทาง" aria-valuemin="0" aria-valuemax="11" aria-valuenow="0">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="game-layout">
+          <div class="scene-content" id="sceneContent" aria-live="polite" aria-atomic="true" tabindex="-1"></div>
+        </div>
+        <p class="privacy-note hidden" id="privacyNote">บัตรผ่านนี้ยังไม่ถูกส่งหรือบันทึก ขณะนี้เกมไม่มีระบบรับสมัครสมาชิกของ SDM</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>IMAGINE CITY</span>
+      <span>MADE FOR A COLORFUL TOMORROW</span>
+    </footer>
+  </body>
+</html>
